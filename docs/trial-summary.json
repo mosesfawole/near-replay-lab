@@ -1,0 +1,354 @@
+{
+  "generatedAt": "2026-11-02T11:32:01.133Z",
+  "totalTrials": 10,
+  "acceptedComparisons": 3,
+  "unsuccessfulTrials": 7,
+  "trials": [
+    {
+      "trial": 1,
+      "runId": "a3019cba-5b33-4c0e-8495-ae8e4c394ac2",
+      "capturedAt": "2026-11-02T09:40:22.949Z",
+      "rpcUrl": "https://rpc.testnet.near.org",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 0,
+        "VIOLATED": 0,
+        "INCONCLUSIVE": 10
+      },
+      "signedAttempts": 0,
+      "finalAttempts": 0,
+      "retainedReportPath": "reports/local/fixture-suite-run1.json",
+      "retainedReportSha256": "d87122374bd2f24603473867691819d8bcb0bc6e11f4336389807406a004c0b1",
+      "errors": [
+        {
+          "category": "transport",
+          "code": null,
+          "message": "fetch failed"
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "runId": "77f70a6b-8844-4a74-bb89-057010a39680",
+      "capturedAt": "2026-11-02T09:41:31.523Z",
+      "rpcUrl": "https://rpc.testnet.near.org",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 0,
+        "VIOLATED": 0,
+        "INCONCLUSIVE": 10
+      },
+      "signedAttempts": 4,
+      "finalAttempts": 2,
+      "retainedReportPath": "reports/local/fixture-suite-run2.json",
+      "retainedReportSha256": "8293280412d72af3a10b58d82c45a37407cc0f0f5a8e96ea949f95d1bd5b379a",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "Saved signed hash 6WW41vfYK1VprYXwYNwe7cWSwtJbR4ixZHVBvPqMhtGk has incomplete FINAL evidence; no new transaction is authorized on that signing lane."
+        },
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "Saved signed hash DAubSSV8iUrSCkRF2eGqXmtMvFSafiFgiG8f2qDXKExH has incomplete FINAL evidence; no new transaction is authorized on that signing lane."
+        },
+        {
+          "category": "evidence",
+          "code": "SIGNING_LANE_BLOCKED",
+          "message": "Signing lane remains blocked after incomplete evidence: FINAL_OBSERVATION_TIMEOUT."
+        },
+        {
+          "category": "timeout",
+          "code": "FINAL_OBSERVATION_TIMEOUT",
+          "message": "Transaction FINAL observation deadline expired; its outcome remains unknown."
+        },
+        {
+          "category": "timeout",
+          "code": "RPC_TIMEOUT",
+          "message": "RPC EXPERIMENTAL_tx_status request timed out after 15000 ms."
+        },
+        {
+          "category": "rpc",
+          "code": "TIMEOUT_ERROR",
+          "message": "RPC EXPERIMENTAL_tx_status failed: Server error"
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "runId": "b1dc05fd-b29f-4cd6-b273-3c7ddf25b480",
+      "capturedAt": "2026-11-02T10:30:56.857Z",
+      "rpcUrl": "https://rpc.testnet.near.org",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 0,
+        "VIOLATED": 0,
+        "INCONCLUSIVE": 10
+      },
+      "signedAttempts": 2,
+      "finalAttempts": 2,
+      "retainedReportPath": "reports/local/fixture-suite-run3.json",
+      "retainedReportSha256": "cd2c228767560bc2c1b3c44977c850569e8e16b6a86ee2c5cf8cc3fd17eb5d52",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "Saved signed hash 4GXREo3urYErSZWY9xpe3TLNKnemHMvFUoNRwN1LQU6n has incomplete FINAL evidence; no new transaction is authorized on that signing lane."
+        },
+        {
+          "category": "rpc",
+          "code": "-429",
+          "message": "RPC block failed: WARNING! THIS ENDPOINT IS DEPRECATED! STOP USING IT NOW! Switch to https://fastnear.com or alternative RPC providers at https://docs.near.org/api/rpc/providers"
+        },
+        {
+          "category": "rpc",
+          "code": "-429",
+          "message": "RPC query failed: WARNING! THIS ENDPOINT IS DEPRECATED! STOP USING IT NOW! Switch to https://fastnear.com or alternative RPC providers at https://docs.near.org/api/rpc/providers"
+        },
+        {
+          "category": "evidence",
+          "code": "SIGNING_LANE_BLOCKED",
+          "message": "Signing lane remains blocked after incomplete evidence: -429."
+        }
+      ]
+    },
+    {
+      "trial": 4,
+      "runId": "e73b251b-95a1-4699-a761-8a0e3ef50981",
+      "capturedAt": "2026-11-02T10:42:26.876Z",
+      "rpcUrl": "https://test.rpc.fastnear.com",
+      "acceptedComparison": true,
+      "capturedVerdicts": {
+        "HOLDS": 7,
+        "VIOLATED": 3,
+        "INCONCLUSIVE": 0
+      },
+      "signedAttempts": 24,
+      "finalAttempts": 24,
+      "retainedReportPath": "reports/local/fixture-suite-run4.json",
+      "retainedReportSha256": "d0359bb7ccc8ff01a8acf811e82de6474a68d6c97897e97eeecec5bb048c47ff",
+      "errors": [
+        {
+          "category": "transport",
+          "code": "INJECTED_RESPONSE_DISCARD",
+          "message": "Constructed fault injection discarded the broadcast response after sending the signed transaction."
+        }
+      ]
+    },
+    {
+      "trial": 5,
+      "runId": "0cb12c31-2c36-45ac-991c-88eb1f076c79",
+      "capturedAt": "2026-11-02T10:47:16.931Z",
+      "rpcUrl": "https://test.rpc.fastnear.com",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 7,
+        "VIOLATED": 2,
+        "INCONCLUSIVE": 1
+      },
+      "signedAttempts": 24,
+      "finalAttempts": 23,
+      "retainedReportPath": "reports/local/fixture-suite-run5.json",
+      "retainedReportSha256": "3ee26eb085641b8d083a25696fb955ae00501935b18a605b54ada637f55f2156",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "At least one independent saved hash has incomplete FINAL evidence; both retained proposals remain visible."
+        },
+        {
+          "category": "timeout",
+          "code": "FINAL_OBSERVATION_TIMEOUT",
+          "message": "Transaction FINAL observation deadline expired; its outcome remains unknown."
+        },
+        {
+          "category": "transport",
+          "code": "INJECTED_RESPONSE_DISCARD",
+          "message": "Constructed fault injection discarded the broadcast response after sending the signed transaction."
+        },
+        {
+          "category": "transport",
+          "code": null,
+          "message": "fetch failed"
+        },
+        {
+          "category": "timeout",
+          "code": "RPC_TIMEOUT",
+          "message": "RPC EXPERIMENTAL_tx_status request timed out after 15000 ms."
+        },
+        {
+          "category": "rpc",
+          "code": "TIMEOUT_ERROR",
+          "message": "RPC EXPERIMENTAL_tx_status failed: Server error"
+        }
+      ]
+    },
+    {
+      "trial": 6,
+      "runId": "13bb5a1d-023e-417e-84d1-774d94b05e19",
+      "capturedAt": "2026-11-02T11:08:47.746Z",
+      "rpcUrl": "https://test.rpc.fastnear.com",
+      "acceptedComparison": true,
+      "capturedVerdicts": {
+        "HOLDS": 7,
+        "VIOLATED": 3,
+        "INCONCLUSIVE": 0
+      },
+      "signedAttempts": 24,
+      "finalAttempts": 24,
+      "retainedReportPath": "reports/local/fixture-suite-run6.json",
+      "retainedReportSha256": "3b25fe8a3091088aeaf313c095e3386ba6ee0ba98ab07ffaf754501c0b110d72",
+      "errors": [
+        {
+          "category": "transport",
+          "code": "INJECTED_RESPONSE_DISCARD",
+          "message": "Constructed fault injection discarded the broadcast response after sending the signed transaction."
+        }
+      ]
+    },
+    {
+      "trial": 7,
+      "runId": "8cff7c9b-aadc-4bb1-8af5-355e54593727",
+      "capturedAt": "2026-11-02T11:12:04.648Z",
+      "rpcUrl": "https://test.rpc.fastnear.com",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 6,
+        "VIOLATED": 2,
+        "INCONCLUSIVE": 2
+      },
+      "signedAttempts": 21,
+      "finalAttempts": 20,
+      "retainedReportPath": "reports/local/fixture-suite-run7.json",
+      "retainedReportSha256": "cbfdb75e740afac2b922cbb9a96f51ee94d8c4a701250862dec804636e32baac",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "At least one independent saved hash has incomplete FINAL evidence; both retained proposals remain visible."
+        },
+        {
+          "category": "rpc",
+          "code": "-429",
+          "message": "RPC query failed: Rate limits exceeded. For higher rate limits get a subscription at https://fastnear.com"
+        },
+        {
+          "category": "timeout",
+          "code": "FINAL_OBSERVATION_TIMEOUT",
+          "message": "Transaction FINAL observation deadline expired; its outcome remains unknown."
+        },
+        {
+          "category": "transport",
+          "code": "INJECTED_RESPONSE_DISCARD",
+          "message": "Constructed fault injection discarded the broadcast response after sending the signed transaction."
+        },
+        {
+          "category": "transport",
+          "code": null,
+          "message": "fetch failed"
+        },
+        {
+          "category": "rpc",
+          "code": "TIMEOUT_ERROR",
+          "message": "RPC EXPERIMENTAL_tx_status failed: Server error"
+        },
+        {
+          "category": "timeout",
+          "code": "RPC_TIMEOUT",
+          "message": "RPC EXPERIMENTAL_tx_status request timed out after 15000 ms."
+        }
+      ]
+    },
+    {
+      "trial": 8,
+      "runId": "8f6898ee-0a82-4e73-a2f7-8f9ecd0c2352",
+      "capturedAt": "2026-11-02T11:19:48.377Z",
+      "rpcUrl": "https://near-testnet.drpc.org",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 0,
+        "VIOLATED": 0,
+        "INCONCLUSIVE": 10
+      },
+      "signedAttempts": 1,
+      "finalAttempts": 0,
+      "retainedReportPath": "reports/local/fixture-suite-run8.json",
+      "retainedReportSha256": "8931b1762b3703e9d256cc991984ac301228f72278b993b01687dacb36200887",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "Saved signed hash AutA99caT54r4ktrLLQrKqJfahe2igvoaYBDko92ZTpL has incomplete FINAL evidence; no new transaction is authorized on that signing lane."
+        },
+        {
+          "category": "evidence",
+          "code": "SIGNING_LANE_BLOCKED",
+          "message": "Signing lane remains blocked after incomplete evidence: 30."
+        },
+        {
+          "category": "rpc",
+          "code": "30",
+          "message": "RPC EXPERIMENTAL_tx_status failed: Request timeout on the free plan, please upgrade to paid plan"
+        }
+      ]
+    },
+    {
+      "trial": 9,
+      "runId": "edb13028-53b3-4fa0-88c4-50dd9cf77b74",
+      "capturedAt": "2026-11-02T11:21:13.480Z",
+      "rpcUrl": "https://testnet-rpc.intea.rs",
+      "acceptedComparison": false,
+      "capturedVerdicts": {
+        "HOLDS": 5,
+        "VIOLATED": 0,
+        "INCONCLUSIVE": 5
+      },
+      "signedAttempts": 13,
+      "finalAttempts": 13,
+      "retainedReportPath": "reports/local/fixture-suite-run9.json",
+      "retainedReportSha256": "ab308c32eb47d60f47a8798908896e7c226dd8dd8073c57dcd8a0b4d3d36ba70",
+      "errors": [
+        {
+          "category": "evidence",
+          "code": "UNKNOWN_FINAL_OUTCOME",
+          "message": "Saved signed hash GUdsJP7bTXqVZVje8t8hKzidmRetw1ZSfmUbLV9iC5HX has incomplete FINAL evidence; no new transaction is authorized on that signing lane."
+        },
+        {
+          "category": "transport",
+          "code": null,
+          "message": "fetch failed"
+        },
+        {
+          "category": "evidence",
+          "code": "SIGNING_LANE_BLOCKED",
+          "message": "Signing lane remains blocked after incomplete evidence: transport."
+        }
+      ]
+    },
+    {
+      "trial": 10,
+      "runId": "9e5057ff-ae10-4f24-8d5a-5d37aac0e08b",
+      "capturedAt": "2026-11-02T11:27:24.164Z",
+      "rpcUrl": "https://test.rpc.fastnear.com",
+      "acceptedComparison": true,
+      "capturedVerdicts": {
+        "HOLDS": 7,
+        "VIOLATED": 3,
+        "INCONCLUSIVE": 0
+      },
+      "signedAttempts": 24,
+      "finalAttempts": 24,
+      "retainedReportPath": "reports/local/fixture-suite-run10.json",
+      "retainedReportSha256": "52c943b70dfaa091c0266b93ee4c74e0818e9646e0ad58fc86bbfb8676fbda70",
+      "errors": [
+        {
+          "category": "transport",
+          "code": "INJECTED_RESPONSE_DISCARD",
+          "message": "Constructed fault injection discarded the broadcast response after sending the signed transaction."
+        }
+      ]
+    }
+  ],
+  "interpretation": "Three accepted complete comparisons are selected from 10 actual trials. Infrastructure-limited captures remain inconclusive and are not rewritten as successful runs. Captured failure verdicts describe their original evidence; later hash observations do not rewrite them."
+}

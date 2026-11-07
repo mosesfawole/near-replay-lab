@@ -1,0 +1,60 @@
+{
+  "checkedOn": "2026-11-02",
+  "completeVideoAudioDecode": "passed; exit 0, no decoder errors",
+  "containerDurationSeconds": 153.89,
+  "expectedDurationSeconds": 153.867,
+  "decodedAudioSeconds": 154.092,
+  "aacPaddingDifferenceSeconds": 0.225,
+  "audioChannels": 2,
+  "audioSampleRate": 48000,
+  "audioRmsDbfs": -21.72,
+  "allEightDecodedSceneFramesMatchRender": true,
+  "frames": [
+    {
+      "id": "01",
+      "sampleAtSeconds": 7.016,
+      "meanAbsolutePixelError": 1.144
+    },
+    {
+      "id": "02",
+      "sampleAtSeconds": 24.999,
+      "meanAbsolutePixelError": 1.094
+    },
+    {
+      "id": "03",
+      "sampleAtSeconds": 44.467,
+      "meanAbsolutePixelError": 1.089
+    },
+    {
+      "id": "04",
+      "sampleAtSeconds": 63.2,
+      "meanAbsolutePixelError": 1.109
+    },
+    {
+      "id": "05",
+      "sampleAtSeconds": 82.467,
+      "meanAbsolutePixelError": 1.117
+    },
+    {
+      "id": "06",
+      "sampleAtSeconds": 100.95,
+      "meanAbsolutePixelError": 1.317
+    },
+    {
+      "id": "07",
+      "sampleAtSeconds": 122.117,
+      "meanAbsolutePixelError": 0.891
+    },
+    {
+      "id": "08",
+      "sampleAtSeconds": 143.85,
+      "meanAbsolutePixelError": 1.092
+    }
+  ],
+  "videoSha256": "c5ec41913f91fcc0fe464c4b0c97e191decc6dc8ad09ad8af7158609005a2e2a",
+  "limitations": [
+    "Automated decode and frame/signal inspection do not establish a human narration listening review.",
+    "Platform upload and public-link playback remain untested until publication.",
+    "No runtime source changed; prior technical acceptance checks are referenced rather than rerun."
+  ]
+}

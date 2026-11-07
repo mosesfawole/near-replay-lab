@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "recorded-demo-media-1",
+  "preparedOn": "2026-11-02",
+  "video": "near-replay-lab-demo.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "H.264",
+  "audioCodec": "AAC",
+  "durationSeconds": 153.867,
+  "bytes": 4244827,
+  "sha256": "c5ec41913f91fcc0fe464c4b0c97e191decc6dc8ad09ad8af7158609005a2e2a",
+  "editing": "Narrated still-capture walkthrough with authored summary cards; no live run or simulated transaction footage. Screenshots are genuine browser captures; displayed metrics panels are cropped from those captures.",
+  "narration": "Offline Windows System.Speech, Microsoft Hazel Desktop, rate 4; synthetic voice, no cloned voice or paid API.",
+  "captureSource": "examples/recorded-runs/core-suite.json",
+  "captureBuild": "0.1.0 (19aa9e2)",
+  "scenes": [
+    {
+      "id": "01",
+      "title": "One approval. Two credits?",
+      "startSeconds": 0.0,
+      "audioSeconds": 12.52,
+      "durationSeconds": 14.033,
+      "endSeconds": 14.033,
+      "images": [
+        "retry-unsafe.png",
+        "retry-guarded.png"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Define the obligation. Follow the evidence.",
+      "startSeconds": 14.033,
+      "audioSeconds": 20.402,
+      "durationSeconds": 21.933,
+      "endSeconds": 35.967,
+      "images": [
+        "report-context.png"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "An allowlist is not an exact approval.",
+      "startSeconds": 35.967,
+      "audioSeconds": 15.494,
+      "durationSeconds": 17.0,
+      "endSeconds": 52.967,
+      "images": [
+        "substitution-unsafe.png",
+        "substitution-guarded.png"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "A fresh request can pay twice.",
+      "startSeconds": 52.967,
+      "audioSeconds": 18.941,
+      "durationSeconds": 20.467,
+      "endSeconds": 73.433,
+      "images": [
+        "retry-unsafe.png",
+        "retry-guarded.png"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Claim Pending before the transfer.",
+      "startSeconds": 73.433,
+      "audioSeconds": 16.542,
+      "durationSeconds": 18.067,
+      "endSeconds": 91.5,
+      "images": [
+        "concurrency-unsafe.png",
+        "concurrency-guarded.png"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "A green call is not payment proof.",
+      "startSeconds": 91.5,
+      "audioSeconds": 17.382,
+      "durationSeconds": 18.9,
+      "endSeconds": 110.4,
+      "images": [
+        "final-payment-receipts.png",
+        "final-receipt-chain.png"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Reproduce the result. Keep the failures.",
+      "startSeconds": 110.4,
+      "audioSeconds": 21.911,
+      "durationSeconds": 23.433,
+      "endSeconds": 133.833,
+      "images": []
+    },
+    {
+      "id": "08",
+      "title": "Inspect before you trust the settlement.",
+      "startSeconds": 133.833,
+      "audioSeconds": 18.525,
+      "durationSeconds": 20.033,
+      "endSeconds": 153.867,
+      "images": [
+        "report-context.png"
+      ]
+    }
+  ]
+}

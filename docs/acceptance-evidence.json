@@ -1,0 +1,319 @@
+{
+  "status": "three-run-acceptance-passed",
+  "source": {
+    "captureSourceSha": "19aa9e234d7b27605585588a1aa3ee3e748fb069",
+    "currentHead": "19aa9e234d7b27605585588a1aa3ee3e748fb069",
+    "sourceMatchesCaptureCommit": true,
+    "sourceFiles": 39,
+    "sourceSha256": "e6b35ed5da668a21d0c9bb0fdf3a8670c01a5b13671d66349368903083f101ac",
+    "compiledVerifierMatchesSource": true,
+    "compiledVerifierFiles": 8,
+    "compiledVerifierSha256": "fbd4f32bf9e27400feabd316049370f4c06368b251be7c23debdd8334d63494b"
+  },
+  "accepted": [
+    {
+      "path": "reports/local/fixture-suite-run4.json",
+      "runId": "e73b251b-95a1-4699-a761-8a0e3ef50981",
+      "createdAt": "2026-11-02T10:42:26.876Z",
+      "provenance": "live",
+      "network": {
+        "networkId": "testnet",
+        "rpcUrl": "https://test.rpc.fastnear.com"
+      },
+      "versions": {
+        "adapter": "near-api-js@7.4.0",
+        "build": "0.1.0"
+      },
+      "bytes": 9159687,
+      "sha256": "d0359bb7ccc8ff01a8acf811e82de6474a68d6c97897e97eeecec5bb048c47ff",
+      "outcomes": [
+        "fixture-legitimate: HOLDS/HOLDS",
+        "fixture-expired: HOLDS/HOLDS",
+        "recipient-substitution: VIOLATED/HOLDS",
+        "lost-response-retry: VIOLATED/HOLDS",
+        "concurrent-duplicates: VIOLATED/HOLDS"
+      ],
+      "checks": {
+        "validator": true,
+        "freshOracle": true,
+        "comparisonExit": 0,
+        "guardedExit": 0,
+        "unsafeExit": 2,
+        "scenarios": 5,
+        "unsafeTargets": 5,
+        "guardedTargets": 5,
+        "uniqueInvoices": 10,
+        "finalizedAttempts": 24,
+        "uniqueTransactionHashes": 24,
+        "uniqueFinalExecutionBlocks": 82,
+        "rpcRecords": 396,
+        "unresolvedAttempts": 0,
+        "signedPacketsAbsent": true,
+        "verdictCounts": {
+          "HOLDS": 7,
+          "VIOLATED": 3,
+          "INCONCLUSIVE": 0
+        }
+      },
+      "invoicesSha256": "cd20567db00fc1bf1d21a03a9e53ea9468fa464055ddec5600dc12204555fe38",
+      "transactionHashesSha256": "c3211aecdab6cb3cbbe7f88e053063a4b3648b78a823f534a80b1240bec996ca"
+    },
+    {
+      "path": "reports/local/fixture-suite-run6.json",
+      "runId": "13bb5a1d-023e-417e-84d1-774d94b05e19",
+      "createdAt": "2026-11-02T11:08:47.746Z",
+      "provenance": "live",
+      "network": {
+        "networkId": "testnet",
+        "rpcUrl": "https://test.rpc.fastnear.com"
+      },
+      "versions": {
+        "adapter": "near-api-js@7.4.0",
+        "build": "0.1.0"
+      },
+      "bytes": 9154684,
+      "sha256": "3b25fe8a3091088aeaf313c095e3386ba6ee0ba98ab07ffaf754501c0b110d72",
+      "outcomes": [
+        "fixture-legitimate: HOLDS/HOLDS",
+        "fixture-expired: HOLDS/HOLDS",
+        "recipient-substitution: VIOLATED/HOLDS",
+        "lost-response-retry: VIOLATED/HOLDS",
+        "concurrent-duplicates: VIOLATED/HOLDS"
+      ],
+      "checks": {
+        "validator": true,
+        "freshOracle": true,
+        "comparisonExit": 0,
+        "guardedExit": 0,
+        "unsafeExit": 2,
+        "scenarios": 5,
+        "unsafeTargets": 5,
+        "guardedTargets": 5,
+        "uniqueInvoices": 10,
+        "finalizedAttempts": 24,
+        "uniqueTransactionHashes": 24,
+        "uniqueFinalExecutionBlocks": 82,
+        "rpcRecords": 396,
+        "unresolvedAttempts": 0,
+        "signedPacketsAbsent": true,
+        "verdictCounts": {
+          "HOLDS": 7,
+          "VIOLATED": 3,
+          "INCONCLUSIVE": 0
+        }
+      },
+      "invoicesSha256": "d34fe0da0f133035d73e21268d590bd418f9c932c5180356c5dfd83ec357dfd0",
+      "transactionHashesSha256": "e6bb4bdf82e5d45872e1041c328f49a6c2b906525b3bd235ea14d2b0a5b80cd0"
+    },
+    {
+      "path": "reports/local/fixture-suite-run10.json",
+      "runId": "9e5057ff-ae10-4f24-8d5a-5d37aac0e08b",
+      "createdAt": "2026-11-02T11:27:24.164Z",
+      "provenance": "live",
+      "network": {
+        "networkId": "testnet",
+        "rpcUrl": "https://test.rpc.fastnear.com"
+      },
+      "versions": {
+        "adapter": "near-api-js@7.4.0",
+        "build": "0.1.0"
+      },
+      "bytes": 9171234,
+      "sha256": "52c943b70dfaa091c0266b93ee4c74e0818e9646e0ad58fc86bbfb8676fbda70",
+      "outcomes": [
+        "fixture-legitimate: HOLDS/HOLDS",
+        "fixture-expired: HOLDS/HOLDS",
+        "recipient-substitution: VIOLATED/HOLDS",
+        "lost-response-retry: VIOLATED/HOLDS",
+        "concurrent-duplicates: VIOLATED/HOLDS"
+      ],
+      "checks": {
+        "validator": true,
+        "freshOracle": true,
+        "comparisonExit": 0,
+        "guardedExit": 0,
+        "unsafeExit": 2,
+        "scenarios": 5,
+        "unsafeTargets": 5,
+        "guardedTargets": 5,
+        "uniqueInvoices": 10,
+        "finalizedAttempts": 24,
+        "uniqueTransactionHashes": 24,
+        "uniqueFinalExecutionBlocks": 83,
+        "rpcRecords": 394,
+        "unresolvedAttempts": 0,
+        "signedPacketsAbsent": true,
+        "verdictCounts": {
+          "HOLDS": 7,
+          "VIOLATED": 3,
+          "INCONCLUSIVE": 0
+        }
+      },
+      "invoicesSha256": "a84644dc2a2cc40b8c52331fa5886c7788fd08b8073d7492342dd12fdc616e09",
+      "transactionHashesSha256": "70bba8183facfcdd4bbc4dd291d7c04c447f8758901c3730d5145a1b6ae03f22"
+    }
+  ],
+  "aggregate": {
+    "acceptedRuns": 3,
+    "scenarios": 15,
+    "targets": 30,
+    "unsafeTargets": 15,
+    "guardedTargets": 15,
+    "globallyUniqueInvoiceObligations": 30,
+    "globallyUniqueTransactionHashes": 72,
+    "invoicesSha256": "b55d4e07967760f50e5eaf2f2eb8724647c1fe8fb5596bb7a66babb08f12f103",
+    "transactionHashesSha256": "73d364003f01fff242e8d7ff6a1960162ed9db7a361f60f4fded47943430b6b9",
+    "allMatricesExact": true,
+    "allValidatorAndOracleChecksPassed": true
+  },
+  "recordedDemo": {
+    "path": "examples/recorded-runs/core-suite.json",
+    "runId": "e73b251b-95a1-4699-a761-8a0e3ef50981",
+    "createdAt": "2026-11-02T10:42:26.876Z",
+    "provenance": "recorded",
+    "network": {
+      "networkId": "testnet",
+      "rpcUrl": "https://test.rpc.fastnear.com"
+    },
+    "versions": {
+      "adapter": "near-api-js@7.4.0",
+      "build": "0.1.0 (19aa9e2)"
+    },
+    "bytes": 9159779,
+    "sha256": "25ee8ec20413b0cb8c97fd9028bbb1a6167197c83c8c43cbd82e2a2950b81ac2",
+    "outcomes": [
+      "fixture-legitimate: HOLDS/HOLDS",
+      "fixture-expired: HOLDS/HOLDS",
+      "recipient-substitution: VIOLATED/HOLDS",
+      "lost-response-retry: VIOLATED/HOLDS",
+      "concurrent-duplicates: VIOLATED/HOLDS"
+    ],
+    "checks": {
+      "validator": true,
+      "freshOracle": true,
+      "comparisonExit": 0,
+      "guardedExit": 0,
+      "unsafeExit": 2,
+      "scenarios": 5,
+      "unsafeTargets": 5,
+      "guardedTargets": 5,
+      "uniqueInvoices": 10,
+      "finalizedAttempts": 24,
+      "uniqueTransactionHashes": 24,
+      "uniqueFinalExecutionBlocks": 82,
+      "rpcRecords": 396,
+      "unresolvedAttempts": 0,
+      "signedPacketsAbsent": true,
+      "verdictCounts": {
+        "HOLDS": 7,
+        "VIOLATED": 3,
+        "INCONCLUSIVE": 0
+      }
+    },
+    "invoicesSha256": "cd20567db00fc1bf1d21a03a9e53ea9468fa464055ddec5600dc12204555fe38",
+    "transactionHashesSha256": "c3211aecdab6cb3cbbe7f88e053063a4b3648b78a823f534a80b1240bec996ca",
+    "sameEvidenceAsAcceptedRun4": true,
+    "servedPath": "apps/web/public/reports/recorded-suite.json",
+    "servedSha256": "25ee8ec20413b0cb8c97fd9028bbb1a6167197c83c8c43cbd82e2a2950b81ac2",
+    "byteIdenticalServedCopy": true
+  },
+  "recordedRepeats": [
+    {
+      "path": "examples/recorded-runs/core-suite-repeat-2.json",
+      "runId": "13bb5a1d-023e-417e-84d1-774d94b05e19",
+      "createdAt": "2026-11-02T11:08:47.746Z",
+      "provenance": "recorded",
+      "network": {
+        "networkId": "testnet",
+        "rpcUrl": "https://test.rpc.fastnear.com"
+      },
+      "versions": {
+        "adapter": "near-api-js@7.4.0",
+        "build": "0.1.0 (19aa9e2)"
+      },
+      "bytes": 9154776,
+      "sha256": "0cdbec582a47744a77f8621f20c5f84bfc2c24773f9bad7a0295fa83d2aeeb53",
+      "outcomes": [
+        "fixture-legitimate: HOLDS/HOLDS",
+        "fixture-expired: HOLDS/HOLDS",
+        "recipient-substitution: VIOLATED/HOLDS",
+        "lost-response-retry: VIOLATED/HOLDS",
+        "concurrent-duplicates: VIOLATED/HOLDS"
+      ],
+      "checks": {
+        "validator": true,
+        "freshOracle": true,
+        "comparisonExit": 0,
+        "guardedExit": 0,
+        "unsafeExit": 2,
+        "scenarios": 5,
+        "unsafeTargets": 5,
+        "guardedTargets": 5,
+        "uniqueInvoices": 10,
+        "finalizedAttempts": 24,
+        "uniqueTransactionHashes": 24,
+        "uniqueFinalExecutionBlocks": 82,
+        "rpcRecords": 396,
+        "unresolvedAttempts": 0,
+        "signedPacketsAbsent": true,
+        "verdictCounts": {
+          "HOLDS": 7,
+          "VIOLATED": 3,
+          "INCONCLUSIVE": 0
+        }
+      },
+      "invoicesSha256": "d34fe0da0f133035d73e21268d590bd418f9c932c5180356c5dfd83ec357dfd0",
+      "transactionHashesSha256": "e6bb4bdf82e5d45872e1041c328f49a6c2b906525b3bd235ea14d2b0a5b80cd0",
+      "sameEvidenceAsAcceptedLiveCapture": true
+    },
+    {
+      "path": "examples/recorded-runs/core-suite-repeat-3.json",
+      "runId": "9e5057ff-ae10-4f24-8d5a-5d37aac0e08b",
+      "createdAt": "2026-11-02T11:27:24.164Z",
+      "provenance": "recorded",
+      "network": {
+        "networkId": "testnet",
+        "rpcUrl": "https://test.rpc.fastnear.com"
+      },
+      "versions": {
+        "adapter": "near-api-js@7.4.0",
+        "build": "0.1.0 (19aa9e2)"
+      },
+      "bytes": 9171326,
+      "sha256": "cfd855eb051e0593328bef5019295277313547d06ef908362caaae402027a625",
+      "outcomes": [
+        "fixture-legitimate: HOLDS/HOLDS",
+        "fixture-expired: HOLDS/HOLDS",
+        "recipient-substitution: VIOLATED/HOLDS",
+        "lost-response-retry: VIOLATED/HOLDS",
+        "concurrent-duplicates: VIOLATED/HOLDS"
+      ],
+      "checks": {
+        "validator": true,
+        "freshOracle": true,
+        "comparisonExit": 0,
+        "guardedExit": 0,
+        "unsafeExit": 2,
+        "scenarios": 5,
+        "unsafeTargets": 5,
+        "guardedTargets": 5,
+        "uniqueInvoices": 10,
+        "finalizedAttempts": 24,
+        "uniqueTransactionHashes": 24,
+        "uniqueFinalExecutionBlocks": 83,
+        "rpcRecords": 394,
+        "unresolvedAttempts": 0,
+        "signedPacketsAbsent": true,
+        "verdictCounts": {
+          "HOLDS": 7,
+          "VIOLATED": 3,
+          "INCONCLUSIVE": 0
+        }
+      },
+      "invoicesSha256": "a84644dc2a2cc40b8c52331fa5886c7788fd08b8073d7492342dd12fdc616e09",
+      "transactionHashesSha256": "70bba8183facfcdd4bbc4dd291d7c04c447f8758901c3730d5145a1b6ae03f22",
+      "sameEvidenceAsAcceptedLiveCapture": true
+    }
+  ],
+  "limits": "Offline evidence validation confirms internal consistency; provenance labels do not authenticate capture origin or RPC operators."
+}

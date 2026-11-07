@@ -1,0 +1,90 @@
+{
+  "kind": "edited-recorded-evidence-walkthrough",
+  "captureSource": "examples/recorded-runs/core-suite.json",
+  "captureBuild": "0.1.0 (19aa9e2)",
+  "captureTime": "2026-11-02T10:42:26.876Z",
+  "narration": "Offline Windows System.Speech, Microsoft Hazel Desktop, rate 4; synthetic voice, no cloned voice or paid API.",
+  "timing": "Per-scene audio measured after synthesis; 0.3 second lead and 1.2 second tail. No time stretching. Editorial target about 2.5 minutes; no organizer time limit was published.",
+  "scenes": [
+    {
+      "id": "01",
+      "title": "One approval. Two credits?",
+      "label": "THE PAYMENT EXECUTION BOUNDARY",
+      "layout": "comparison",
+      "images": ["retry-unsafe.png", "retry-guarded.png"],
+      "points": ["Approved: 0.001 NEAR", "Unsafe: 0.002 NEAR", "Guarded: 0.001 NEAR"],
+      "note": "Actual recorded testnet credits; deliberately constructed fixtures.",
+      "narration": "One approved payment should settle once. Here, an approval for zero point zero zero one NEAR produces twice that credit in our unsafe fixture. The guarded fixture pays exactly once. NEAR Replay Lab makes that difference inspectable."
+    },
+    {
+      "id": "02",
+      "title": "Define the obligation. Follow the evidence.",
+      "label": "RECORDED REPORT / 2 NOVEMBER 2026",
+      "layout": "context",
+      "images": ["report-context.png"],
+      "points": ["Invoice + recipient + exact amount + expiry", "Constructed approvals, proposals and faults", "Actual contracts, receipts, state and credits"],
+      "note": "No live model was evaluated. Imported provenance is not authenticated.",
+      "narration": "This is saved evidence from native NEAR testnet, captured on November second. The canonical obligation binds an invoice, recipient, exact amount, and expiry. We construct the approvals, proposed actions, and faults. The deployed Rust contracts, signatures, finalized receipts, state views, and recipient credits are real. No live language model is being evaluated."
+    },
+    {
+      "id": "03",
+      "title": "An allowlist is not an exact approval.",
+      "label": "FAULT 1 / RECIPIENT SUBSTITUTION",
+      "layout": "comparison",
+      "images": ["substitution-unsafe.png", "substitution-guarded.png"],
+      "points": ["Unsafe pays the alternate recipient", "Intended recipient receives zero", "Guarded rejects the mismatch"],
+      "note": "Both vaults enforce the same generic allowlist, amount cap and expiry.",
+      "narration": "First, substitute another allowed recipient. Both vaults have authorization, an allowlist, an amount cap, and expiry checks. The unsafe vault still pays the alternate recipient. The intended recipient gets nothing. The guarded vault binds the exact obligation and rejects the mismatch."
+    },
+    {
+      "id": "04",
+      "title": "A fresh request can pay twice.",
+      "label": "FAULT 2 / DISCARDED RESPONSE + RETRY",
+      "layout": "comparison",
+      "images": ["retry-unsafe.png", "retry-guarded.png"],
+      "points": ["Retain the first signed hash", "Prove FINAL and the first exact credit", "Deliberately sign a fresh-nonce duplicate"],
+      "note": "Observing the same signed hash again counts once; this is a new request.",
+      "narration": "Next, discard the first broadcast response. The runner retains the signed hash, observes it through FINAL, and proves the first exact credit. Only then do we deliberately sign a fresh nonce request for the same invoice. The unsafe fixture credits twice. The guarded fixture rejects the duplicate. Observing an identical signed hash twice would count only once."
+    },
+    {
+      "id": "05",
+      "title": "Claim Pending before the transfer.",
+      "label": "FAULT 3 / INDEPENDENT-KEY CONCURRENCY",
+      "layout": "comparison",
+      "images": ["concurrency-unsafe.png", "concurrency-guarded.png"],
+      "points": ["Two restricted keys; independent nonces", "One invoice; concurrent requests", "Guarded claim gate admits one settlement"],
+      "note": "Unknown callback outcomes remain locked in Pending.",
+      "narration": "Now broadcast duplicate proposals concurrently from two restricted keys with independent nonces. The unsafe vault pays twice again. The guarded vault claims Pending before creating the transfer, so only one request can settle. A matching private callback can finish the claim. An unknown callback outcome stays locked."
+    },
+    {
+      "id": "06",
+      "title": "A green call is not payment proof.",
+      "label": "INSPECT THE PUBLIC RECEIPTS",
+      "layout": "comparison",
+      "images": ["final-payment-receipts.png", "final-receipt-chain.png"],
+      "points": ["Transaction and action identity", "Complete linked successful FINAL receipts", "Exact recipient balance delta"],
+      "note": "The read-only dashboard recalculates HOLDS, VIOLATED or INCONCLUSIVE.",
+      "narration": "Open a payment attempt and follow the public receipt chain to the recipient. Inclusion or a green top level call alone cannot prove settlement. Our evidence oracle requires transaction identity, linked successful FINAL receipts, canonical approval evidence, and the exact recipient balance change. Missing or inconsistent evidence remains inconclusive."
+    },
+    {
+      "id": "07",
+      "title": "Reproduce the result. Keep the failures.",
+      "label": "BOUNDED ACCEPTANCE EVIDENCE",
+      "layout": "metrics",
+      "images": [],
+      "points": ["3 accepted comparisons / 10 actual trials", "7 infrastructure-limited captures retained", "30 unique invoices / 72 FINAL transactions", "197 Node tests / 74 Rust host tests"],
+      "note": "FINAL transaction count includes owner approvals. Production safety is unproven.",
+      "narration": "Three complete comparisons were accepted from ten actual trials. Seven infrastructure limited captures are preserved. The accepted runs contain thirty unique invoices and seventy two distinct FINAL transactions, including approvals. One hundred ninety seven Node tests and seventy four Rust host tests passed. Clean reproduction and dashboard checks passed. These bounded results do not establish production safety."
+    },
+    {
+      "id": "08",
+      "title": "Inspect before you trust the settlement.",
+      "label": "NEAR REPLAY LAB / AI SECURITY & DEFENSE",
+      "layout": "close",
+      "images": ["report-context.png"],
+      "points": ["Native NEAR testnet + official SDKs", "Local runner; read-only report viewer", "Open the report, replay the faults, inspect the credit"],
+      "note": "Built at NEAR HACKATHON by solo builder @mosesfawole with Codex assistance.",
+      "narration": "The goal is to help developers test payment execution policies before relying on them. Native NEAR contracts and the official JavaScript and Rust SDKs supply the execution boundary. The report viewer needs no wallet connection. Built at NEAR HACKATHON by solo developer mosesfawole with Codex assistance. Open the report, replay the faults, and inspect the credit."
+    }
+  ]
+}

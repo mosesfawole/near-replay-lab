@@ -1,0 +1,19 @@
+{
+  "name": "near-replay-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "build:runner": "tsc -p tsconfig.json",
+    "test": "npm run build:runner && node --test dist/packages/core/test/*.test.js dist/packages/near-adapter/test/*.test.js dist/packages/runner/test/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "cli": "node --env-file-if-exists=.env dist/packages/runner/src/cli.js",
+    "dev": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "build": "npm run build:runner && npm run build:web"
+  },
+  "dependencies": { "near-api-js": "7.4.0" },
+  "devDependencies": { "typescript": "5.9.3", "@types/node": "24.10.0" }
+}

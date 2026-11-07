@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "local-submission-draft-1",
+  "preparedOn": "2026-11-02",
+  "status": "local_draft_not_submitted",
+  "sendable": false,
+  "organizer": {
+    "name": "NEAR HACKATHON",
+    "sourceUrl": "https://nearhackathon.com/HACKATHON.md",
+    "verifiedOn": "2026-11-02",
+    "rulesDocument": "docs/submission/rules-and-requirements.md"
+  },
+  "draftFields": {
+    "requestId": null,
+    "projectName": "NEAR Replay Lab",
+    "leadName": null,
+    "email": null,
+    "size": "1",
+    "tracks": [
+      "security"
+    ],
+    "nearAddress": null,
+    "projectUrl": null,
+    "demoUrl": null,
+    "idea": "An approved 0.001 NEAR obligation settled as 0.002 NEAR in our unsafe fixture and 0.001 NEAR in the guarded fixture. NEAR Replay Lab makes that difference inspectable: replay the failure, open the FINAL receipts, and see exactly who received what.\n\nWe test the execution boundary for payment-capable AI integrations. A local TypeScript runner sends constructed requests to two disposable Rust contracts on native NEAR testnet. The five cases are legitimate payment, expired approval, recipient substitution, retry after a discarded broadcast response, and concurrent duplicate requests from independent keys. Both vaults share authorization, allowlist, cap and expiry checks. The guarded vault also binds the exact approved recipient and amount and claims Pending before transfer.\n\nThe evidence oracle checks linked successful FINAL receipts, canonical approvals and exact recipient balance changes. The read-only Next.js dashboard recalculates each verdict as HOLDS, VIOLATED or INCONCLUSIVE; a green function call alone does not prove payment. A repeated signed hash counts once. Our duplicate cases use fresh signed requests for the same invoice.\n\nThree complete comparisons were accepted from ten actual trials: 30 unique obligations and 72 distinct FINAL transactions, including owner approvals. Seven infrastructure-limited trials remain inconclusive and are disclosed. 197 Node tests and 74 Rust SDK-host tests passed; clean reproduction and dashboard checks passed.\n\nThe experiment uses constructed inputs; no live model or real vendor vulnerability was evaluated. An unknown callback outcome leaves the guarded obligation locked. Production safety and adoption are unproven. Built by solo developer @mosesfawole with Codex assistance.",
+    "consent": null
+  },
+  "characterCounts": {
+    "projectName": 15,
+    "idea": 1743
+  },
+  "characterCountConvention": "Unicode characters including spaces, punctuation and LF newlines; all supplied field copy is ASCII.",
+  "verifiedFieldLimits": {
+    "projectName": {
+      "minimum": 2,
+      "maximum": 80
+    },
+    "idea": {
+      "minimum": 20,
+      "maximum": 2000
+    },
+    "projectUrl": {
+      "maximum": 300
+    },
+    "demoUrl": {
+      "maximum": 300
+    },
+    "leadName": {
+      "minimum": 2,
+      "maximum": 80
+    },
+    "email": {
+      "maximum": 160,
+      "requirement": "Valid email"
+    },
+    "nearAddress": {
+      "minimum": 2,
+      "maximum": 64,
+      "requirement": "Lowercase mainnet payout account"
+    },
+    "size": {
+      "allowedValues": [
+        "1",
+        "2 - 4",
+        "4 - 6",
+        "6 - 8",
+        "8+"
+      ]
+    }
+  },
+  "copyVariants": {
+    "tagline": {
+      "value": "We replay payment failures against NEAR integrations and show exactly what settled.",
+      "characters": 83,
+      "organizerSeparateFieldVerified": false,
+      "platformLimit": null
+    },
+    "shortDescription": {
+      "value": "An approved 0.001 NEAR obligation settled as 0.002 NEAR in the unsafe fixture and 0.001 NEAR in the guarded fixture. NEAR Replay Lab replays payment failures, then checks finalized receipts and exact recipient credit against the approved recipient, amount and once-only obligation.",
+      "characters": 281,
+      "organizerSeparateFieldVerified": false,
+      "platformLimit": null
+    }
+  },
+  "track": {
+    "proposedLabel": "AI Security & Defense",
+    "formId": "security",
+    "acceptanceStatus": "Organizer judgment; relevance is not a confirmed eligibility result",
+    "rationale": "Tests exact payment policy and duplicate settlement against own native NEAR testnet contracts."
+  },
+  "team": {
+    "publicGitHubHandle": "@mosesfawole",
+    "role": "Solo builder",
+    "aiAssistance": "OpenAI Codex assisted implementation, tests, documentation and review under human direction.",
+    "runtimeModelUse": "Constructed deterministic actions; no live model or paid AI API."
+  },
+  "publication": {
+    "repository": {
+      "url": null,
+      "status": "not_published"
+    },
+    "demoPost": {
+      "url": null,
+      "status": "not_published",
+      "requirements": [
+        "Say built at NEAR HACKATHON",
+        "Tag @NEARProtocol",
+        "Include #NEARHackathon",
+        "Attach video for this local-only demo"
+      ]
+    },
+    "hostedDemo": {
+      "url": null,
+      "status": "not_deployed"
+    },
+    "video": {
+      "url": null,
+      "status": "not_published"
+    },
+    "submission": {
+      "status": "not_submitted"
+    }
+  },
+  "missingBeforeActualSubmission": [
+    "Public projectUrl",
+    "Public demoUrl with required local-only video",
+    "Human leadName",
+    "Human email",
+    "Human mainnet nearAddress for payout",
+    "Fresh requestId",
+    "Human consent",
+    "Final human eligibility review"
+  ],
+  "sourceCheckpoint": {
+    "prePhase6CheckpointCommit": "fe71768",
+    "captureSourceCommit": "19aa9e234d7b27605585588a1aa3ee3e748fb069",
+    "captureBuild": "0.1.0 (19aa9e2)"
+  },
+  "evidence": {
+    "acceptedComparisons": 3,
+    "totalTrials": 10,
+    "infrastructureLimitedIncompleteTrials": 7,
+    "uniqueInvoiceObligations": 30,
+    "distinctFinalTransactionHashes": 72,
+    "transactionCountIncludes": "Owner approvals",
+    "nodeTestsRecordedPassing": 197,
+    "rustSdkHostTestsRecordedPassing": 74,
+    "duplicateExample": {
+      "approvedNear": "0.001",
+      "unsafeCreditedNear": "0.002",
+      "guardedCreditedNear": "0.001"
+    },
+    "references": [
+      "docs/verification.md",
+      "docs/acceptance-evidence.json",
+      "docs/trial-summary.json",
+      "docs/architecture.md",
+      "examples/recorded-runs/core-suite.json"
+    ]
+  },
+  "claimLimits": [
+    "Constructed approvals, substitutions, discarded responses and concurrency; actual contracts, signatures, finalized receipts, state and credits.",
+    "No live-model benchmark, mainnet deployment, real vendor vulnerability, customer adoption or prize result.",
+    "No production or comprehensive safety claim; an unknown callback may leave Pending locked.",
+    "Offline validation checks internal evidence consistency and does not authenticate report origin or RPC operators."
+  ],
+  "unverifiedLimits": {
+    "separateTagline": null,
+    "separateShortDescription": null,
+    "videoDuration": null,
+    "videoSize": null,
+    "videoResolution": null,
+    "socialPostCharacters": null
+  },
+  "privacy": "Personal form values are intentionally null. The organizer website honeypot is omitted. This JSON is a reviewable local draft, not an actual submit-ready payload."
+}

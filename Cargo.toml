@@ -1,0 +1,21 @@
+[workspace]
+members = ["contracts/unsafe-vault", "contracts/guarded-vault"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.95"
+version = "0.1.0"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+near-sdk = "=5.30.0"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+panic = "abort"
+overflow-checks = true
+strip = "symbols"

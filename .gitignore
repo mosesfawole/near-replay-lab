@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.next/
+target/
+.env
+.env.*
+!.env.example
+.superpowers/
+.local/
+reports/local/
+*.log
+*.tsbuildinfo
+
